@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+:root {
+  --primary: #0e0e10;
+  --background: #fefefa;
+  --shadow: 14, 14, 16;
+}
+
+body {
+  min-width: 360px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  color: var(--primary);
+  background: var(--background);
+}
+
+h1 {
+  margin: 35px auto 25px auto;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: rgba(var(--shadow), 0.1) 0px 0px 24px;
+  max-width: 360px;
+  margin: auto auto 45px auto;
+}
+
+img {
+  width: 80%;
+  margin-top: 35px;
+  border-radius: 10px;
+  box-shadow: rgba(var(--shadow), 0.1) 0px 0px 24px;
+}
+
+p {
+  margin: 25px;
+}
+
+.title {
+  color: #696969;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.links a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 28px;
+  margin: 0 5px;
+}
+
+.contact {
+  border: none;
+  padding: 15px 0 10px 0;
+  color: var(--background);
+  background-color: var(--primary);
+  cursor: pointer;
+  width: 320px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 20px auto 20px auto;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  color: var(--primary);
+}
+
+.dark-mode {
+  --primary: #fefefa;
+  --background: #0e0e10;
+  --shadow: 254, 254, 250;
+}
