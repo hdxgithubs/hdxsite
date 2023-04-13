@@ -1,0 +1,59 @@
+html {scroll-behavior: smooth;}
+body {margin: 0;}
+* { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+*{-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;}
+img {pointer-events: none;}
+.left, .right {float: left;width: 50%;}
+.main {float: left;width: 100%;}
+@media screen and (max-width: 800px) {.left, .main, .right {width: 100%;}}
+h2 {text-align: center;font-size: 28px;font-family: Marcellus SC;font-weight: 300;margin-top: 100px;}
+.sub {text-align: center;font-size: 10px;font-family: 'Times New Roman', Times, serif;font-style: italic;color: grey;letter-spacing: 1px;margin-top: -20px;}
+.header{position:relative;display:flex;flex-wrap: wrap;align-items: flex-start;align-content: flex-start;height: 70px;min-width:320px;background: white;}
+.menu{position:absolute;right:5px;top:10px;}
+.logo{margin-top:15px;margin-left: 5px;padding:5px;}
+.sides{flex: 0 0 auto;width:50%;}
+.overlay {height: 100%;width: 0;position: fixed; z-index: 1;left: 0;top: 0;background: linear-gradient(90deg, #00c6dd, #0072cc);opacity: 0.9;overflow-x: hidden;transition: 0.1s;}
+.overlay-content {position: relative;top: 25%;width: 100%;text-align: center;margin-top: 30px;}
+.overlay a {padding: 8px;text-decoration-line: underline;text-decoration-style: solid;text-decoration-color: white;text-decoration-thickness: 2px;font-family: Alegreya Sans SC;font-size: 36px;color: #fff;display: block;transition: 0.1s;}
+.overlay a:hover, .overlay a:focus {color: purple;text-decoration-color: purple;}
+.overlay .closebtn {position: absolute;top: 20px;right: 45px;font-size: 60px;font-weight: 1000;text-decoration-line: none;}
+.container2 {position: relative;}
+.text-block {position: absolute;top: 20px;left: 10px;color: white;padding-left: 10px;padding-right: 10px;}
+.resizer1 { text-align: left;font-family: Montserrat;color: white;font-size: 28px;font-weight: 720;text-shadow: 2px 2px 4px #696969;}
+.resizer2 {text-align: left;font-family: Montserrat;color: black;font-size: 10px;letter-spacing: 4px;margin-top: -30px;margin-left: 8px;}
+@media screen and (min-width: 800px) {p.resizer1 {font-size: 75px;text-shadow: 8px 8px 16px #696969;}
+p.resizer2 {font-size: 30px;letter-spacing: 9px;margin-top: -80px;margin-left: 18px;}
+button.hdbutton {font-size: 40px;letter-spacing: 5px;width: 250px;border-radius: 50px;padding: 15px;}}
+.hdbutton {position: relative;background-color: black;border: 1px solid;font-family: Montserrat;font-size: 14px;letter-spacing: 3px;color: #FFFFFF;padding: 8px;width: 100px;border-radius: 30px;text-align: center;-webkit-transition-duration: 1s;transition-duration: 1s;text-decoration: none;overflow: hidden;cursor: pointer;outline: none;}
+.hdbutton:after {content: "";background: #fff;display: block;position: absolute;padding-top: 300%;padding-left: 350%;margin-left: -20px !important;margin-top: -120%;opacity: 0;transition: all 1s;}
+.hdbutton:active:after {padding: 0;margin: 0;opacity: 1;transition: 0s;}
+.card1 {transition: 0.3s;width: 90%;height: 280px;margin-left: 5%;margin-right: 5%;text-align: center;color: rgba(0, 0, 0, 0.5);font-size: 16px;font-family: Ubuntu;font-weight: 600;margin-top: 30px;border: 1px solid rgba(200, 200, 200, 0.4);border-radius: 5px;}
+.card1:hover {box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.2);color: rgba(0, 0, 0, 0.7);}
+.container3 {padding: 20px;margin-top: 50px;color: #696969;font-size: 15px;font-family: Sulphur Point;font-weight: 100;}
+a.ontre:link, a.ontre:visited {color: #696969;background-color: transparent;}
+a.ontre:hover, a.ontre:active {color: #00c6dd;background-color: transparent;}
+.card2 {transition: 0.3s;width: 90%;margin-left: 5%;margin-right: 5%;text-align: center;font-size: 16px;margin-top: 30px;border: 1px solid rgba(200, 200, 200, 0.4);border-radius: 5px;}
+.card2:hover {box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.2);}
+.container4 {height: 180px;padding: 20px;display: flex;justify-content: center;align-items: center;}
+.dot {height: 11px;width: 11px;background-color: #00c6dd;border-radius: 50%;display: inline-block;}
+.card3 {width: 80%;height: 200px;margin-left: 10%;margin-right: 10%;text-align: center;font-size: 16px;color: #808080;font-family: Ubuntu;font-weight: 550;margin-top: 70px;border: 1px solid rgba(200, 200, 200, 0.4);border-radius: 5px;background: rgba(250, 250, 250, 0.3);}
+.container5 {padding: 20px;margin-top: 40px;}
+.decorative {border-bottom: 3px solid #00c6dd;width: fit-content;}
+* {box-sizing: border-box}
+input[type=text], input[type=password] {width: 100%;padding: 15px;margin: 5px 0 22px 0;display: inline-block;border: none;background: #f1f1f1;}
+input[type=text]:focus, input[type=password]:focus {background-color: #ddd;outline: none;}
+hr {border: 1px solid #f1f1f1;margin-bottom: 25px;}
+.signupbtn {text-align: center;background: linear-gradient(90deg, #00c6dd, #0072cc);color: white;font-size: 14px;font-family: Montserrat;letter-spacing: 2px;padding: 10px;margin-top: 10px;margin-right: 10%;border: none;border-radius: 25px;cursor: pointer;width: 100px;opacity: 0.9;outline: none;}
+button:hover {opacity:1;}
+.loginbtn {text-align: center;background: black;color: white;font-size: 14px;font-family: Montserrat;letter-spacing: 2px;padding: 10px;margin-top: 10px;margin-left: 10%;border: none;border-radius: 25px;cursor: pointer;width: 100px;opacity: 0.9;outline: none;}
+.loginbtn {float: left;}
+.signupbtn {float: right;}
+.container6 {padding: 16px;}
+.clearfix::after {content: "";clear: both;display: table;}
+.card4 {width: 100%;padding: 20px;text-align: left;font-size: 16px;font-family: sans-serif;letter-spacing: 0.5px;border: 1px solid rgba(0, 0, 0, 0.9);background: rgba(0, 0, 0, 0.9);}
+.icon {width: 20px;height: 20px;vertical-align: middle;margin-right: 5px;color:#c0c0c0;}
+.card4 a{background-color: transparent; text-decoration: none;
+}
+.container8 {padding: 20px;text-align: center;color: #dcdcdc;font-size: 12px;font-family: ABeeZee;letter-spacing: 1px;margin-top: 10px;border-style: solid;border-color: #00c6dd;border-width: 1px 0 0 0;}
+a.contactlinks:link, a.contactlinks:visited {color: #a9a9a9;font-size: 15px;}a
+.contactlinks:hover, a.contactlinks:active {color: #00c6dd;}
